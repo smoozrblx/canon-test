@@ -45,9 +45,9 @@ When creating or updating products, the `product_status` must be one of the foll
 - `OBSOLETE`
 
 ## Issues Encountered
-### 1. **CORS Issues in Development**
+### 1. **CORS Issues**
    - While developing locally, I encountered **CORS** (Cross-Origin Resource Sharing) issues when attempting to make API requests from `localhost` to the provided API.
-   - To resolve this, you can use a **proxy** or install a browser extension like **CORS Unblock** to bypass these restrictions during development.
+   - To resolve this, you can use a browser extension like **CORS Unblock** to bypass these restrictions, since I don't have access to the CORS Back-end policy.
 
 ### 2. **500 Internal Server Error on Search**
    - When making a search request to the `/product/` endpoint with a query parameter, I received a `500 Internal Server Error`.
@@ -58,6 +58,14 @@ When creating or updating products, the `product_status` must be one of the foll
    - Validation is in place for the product creation and update forms to ensure that all required fields are properly filled.
 
 ## How to Run the Application
+
+> [!WARNING]  
+> You may not be able to run the app, without by-passing CORS. Try using an extension like [CORS Unblock](https://chromewebstore.google.com/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino?hl=en)
+
+### Open the hosted instance on Github Pages
+   - You can view the latest version hosted at https://smoozrblx.github.io/canon-test/app.html
+
+## or
 
 ### 1. **Clone the Repository**
    - Clone this repository to your local machine using:
