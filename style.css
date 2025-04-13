@@ -1,0 +1,9 @@
+
+.noUi-handle {
+    width: 8px; /* Adjust the width */
+    height: 8px; /* Adjust the height */
+    background: #b8d9ff; /* Thumb color */
+    border-radius: 50%; /* Make the thumb round */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    size: 1px;
+}
