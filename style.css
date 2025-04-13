@@ -1,9 +1,89 @@
-
-.noUi-handle {
-    width: 8px; /* Adjust the width */
-    height: 8px; /* Adjust the height */
-    background: #b8d9ff; /* Thumb color */
-    border-radius: 50%; /* Make the thumb round */
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    size: 1px;
+.slider-container {
+    position: relative;
 }
+input[type="range"] {
+    position: absolute;
+    pointer-events: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 0;
+    top: 10px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 16px;
+    height: 16px;
+    top: -8px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    position: relative;
+    z-index: 3;
+}
+.slider {
+    height: 4px;
+    position: relative;
+    background: #ddd;
+    width: 100%;
+}
+.track {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #ddd;
+}
+.range {
+    position: absolute;
+    height: 4px;
+    background: #007bff;
+}
+.values {
+    text-align: center;
+}
+
+.custom-dropdown {
+    width: 300px;
+    margin-top: 10px;
+  }
+  
+  .dropdown-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdown-input {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .placeholder {
+    color: #aaa;
+  }
+  
+  
+  .remove-icon {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .dropdown-option {
+    padding: 4px;
+    cursor: pointer;
+  }
+  
+  .dropdown-option:hover {
+    background-color: #f0f0f0;
+  }
